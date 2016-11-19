@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
-message = ""
 set :secret_number, rand(100) + 1
 
 def set_message(guess)
