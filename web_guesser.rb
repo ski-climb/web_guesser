@@ -45,7 +45,7 @@ end
 get '/' do
   guess = params['guess'].to_i
   message = set_message(guess)
-  erb :index, locals: { 
+  erb :index, locals: {
                         number: settings.secret_number,
                         guess: guess,
                         message: message
